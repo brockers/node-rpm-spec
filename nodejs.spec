@@ -10,7 +10,7 @@ Group:         Applications/Internet
 License:       Copyright Joyent, Inc. and other Node contributors.
 URL:           http://nodejs.org
 
-Source0:       http://nodejs.org/dist/node-v%{version}.tar.gz
+Source0:       http://nodejs.org/dist/v%{version}/node-v%{version}.tar.gz
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires: python >= 2.6, openssl-devel, gcc-c++
 
@@ -51,6 +51,9 @@ rm -rf %{buildroot}
 /usr/lib/dtrace/node.d
 
 %changelog
+* Mon Feb 04 2013 Bobby Rockers <bob@groundwarp.com> 0.8.18-1
+- Fix specfile source definition to work with spectools download requriements.
+
 * Tue Jan 22 2013 Joseph Hajduk <joseph@solidys.com> 0.8.18-1
 - RPM using upstream v0.8.18
 
