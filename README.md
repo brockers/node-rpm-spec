@@ -1,6 +1,6 @@
 node rpm specfile
 =================
-Node.js does not come with RPMs for CentOS 6.3. Here are instructions to build node rpms from source.
+Node.js does not come with RPMs for CentOS 6.3 and Fedora 18.  Fedora 19 already has node packages listed as part of their project but the number of depenancies make it difficult to install well on Fedora 18.  Here are instructions to build node rpms from source.
 
 Steps to build
 --------------------------------------------------------
